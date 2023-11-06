@@ -1,0 +1,333 @@
+*{
+  box-sizing: border-box;
+}
+
+#grid-container{
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+img{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(22, 62, 118);
+  color: white;
+}
+
+header{
+  background-image: url(img/royal-blue.jpg);
+  /*royal blue source: https://stock.adobe.com/search?k=elegant+royal+blue+background&asset_id=512643436*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/royal-blue.jpg");
+  background-size: cover;
+  align-items: center;
+  grid-area: header;
+  position: relative;
+}
+
+main{
+  display: grid;
+  align-items: center;
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  background-color: rgb(12, 39, 62);
+}
+
+header, main, footer{
+  padding: 1rem;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+#bottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+#bottom section{
+  max-width: 300px;
+  width: 100%;
+  min-width: 200px;
+}
+
+.images{
+  width: 100%;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.button{
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: darkblue;
+  font-size: 1.25rem;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.button:hover{
+  background-color: rgb(255, 243, 166);
+  color: black;
+}
+
+#logo{
+  color: white;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin: 1rem;
+}
+
+.title{
+  color: rgb(255, 243, 166);
+  text-transform: uppercase;
+  margin: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.title2{
+  width: 100%;
+  text-align: center;
+}
+
+.product-details{
+  min-width: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px auto;
+}
+
+.product-image{
+  background-color: rgb(49, 103, 180);
+}
+
+.product-text{
+  background-color: rgb(93, 130, 182);
+  padding: 60px;
+}
+
+.product-text .product-category{
+  color: white;
+  font-size: 1rem;
+}
+
+.product-text h3{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 10px 0px
+}
+
+.product-text .product-price{
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+
+.product-text p{
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: white;
+  margin: 30px 0px;
+
+}
+
+.product-size-container strong{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-bottom: 1px solid white;
+}
+
+.product-size{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-size label{
+  font-size: 1rem;
+  background-color:rgb(22, 62, 118);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.product-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px 0px;
+  grid-gap: 20px;
+
+}
+
+.product-buttons a{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.product-buttons .cart-button{
+  background-color:rgb(22, 62, 118);
+  color: white;
+
+}
+
+.product-buttons .favorites-button{
+  background-color:rgb(22, 62, 118);
+  color: white;
+}
+
+.size-checkbox{
+  display: none;
+}
+
+.size-checkbox:checked + .size-label{
+  background-color: rgb(255, 243, 166);
+  color: black;
+}
+
+.form-group label{
+  display: block;
+  margin-bottom: 15px;
+}
+
+.services section{
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.column{
+  width: 100%;
+  border: 1px solid rgb(255, 243, 166);
+  padding: 0 1em 1em 1em;
+  text-align: center;
+
+}
+
+.card{
+  border: 1px solid rgb(255, 243, 166);
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background-color: rgb(93, 130, 182);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+}
+
+.card h3{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin: 1rem 0;
+
+}
+
+.card p{
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 600px){
+  #grid-container{
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+
+  .flex-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex-section img{
+    width: 50%;
+  }
+
+  .flex-section section{
+    padding: 1rem;
+    width: 40%;
+    align-self: center;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .product-text{
+    padding: 30px;
+  }
+
+  .product-details{
+    grid-template-columns: 1fr;
+  }
+
+  .product-buttons{
+    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .product-text h3{
+    font-size: 1.3rem;
+  }
+
+  .services{
+    padding: 1rem;
+  }
+
+  .column{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+}

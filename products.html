@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Product Details Page</title>
+    </head>
+    <body>
+        <div id="grid-container">
+            <header>
+                <nav class="flex-section">
+                    <a id="logo" href="index.html">VELOCITY</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="delivery-return.html">Delivery and Return</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1 class="title">Product Info</h1>
+                <section class="product">
+                    <article class="product-image">
+                        <img src="css/img/female-shoes1.avif" alt="female running shoes">
+                        <!--Female shoes1 source: https://www.runnersworld.com/gear/a25578469/best-running-shoes-for-women/-->
+                    </article>
+                    <article class="product-text">
+                        <span class="product-categort">Women's Shoes</span>
+                        <h3>Running shoes</h3>
+                        <span class="product-price">1999,- NOK</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
+                        <article class="product-size-container">
+                            <strong>Size: </strong>
+                            <article class="product-size">
+                                <input type="checkbox" class="size-checkbox" id="size-40">
+                                <label for="size-40" class="size-label">40</label>
+                                <input type="checkbox" class="size-checkbox" id="size-38">
+                                <label for="size-38" class="size-label">38</label>
+                                <input type="checkbox" class="size-checkbox" id="size-36">
+                                <label for="size-36" class="size-label">36</label>
+                            </article>
+                        </article>
+                        <article class="product-buttons">
+                            <a href="#" class="cart-button">Add to cart</a>
+                            <a href="#" class="favorites-button">Favorites</a>
+                        </article>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <article id="news-letter">
+                    <h2>Want to receive the latest news on the best shoes?</h2>
+                    <form class="form-group"
+                    id="newsletter-registration" 
+                    method="post" 
+                    action="#" 
+                    autocomplete="on">
+                        <span onclick="openClose('none')"></span>
+                        <h3>Sign up for our newsletter</h3>
+                        <label for="first-name">First name
+                            <input 
+                            type="text" 
+                            id="first-name" 
+                            name="name" 
+                            placeholder="Nora">
+                        </label>
+                        <label for="last-name">Last name
+                            <input 
+                            type="text" 
+                            id="last-name" 
+                            name="last-name" 
+                            placeholder="Nordmann">
+                        </label>
+                        <label for="email-registration">E-mail address</label>
+                        <input 
+                        type="email" 
+                        name="email-registration" 
+                        id="email-registration" 
+                        placeholder="nora@email.com">
+                        <label 
+                        class="newsletter-interest">What are you interested in?</label>
+                        <label 
+                        class="alternative-men">Running shoes for men.
+                            <input 
+                            type="radio" 
+                            value="Running shoes for men." 
+                            id="alternative-men" 
+                            name="newsletter-interest">
+                        </label> 
+                        <label 
+                        class="alternative-women">Running shoes for women.
+                            <input 
+                            type="radio" 
+                            value="Running shoes for women." 
+                            id="alternative-women" 
+                            name="newsletter-interest">
+                        </label>   
+                        <button class="button">Subscribe</button>
+                        <hr>                
+                    </form>
+                </article>
+            <section id="bottom">
+                <h2 class="title2">Services</h2>
+            </section>
+                <article>
+                    <h3>Products</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Delivery and Return</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Follow us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <button class="button" onclick="window.location.href='index.html';">Back to the top</button>
+                </article>
+            </footer>
+        </div>
+    </body>
+</html>
