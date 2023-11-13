@@ -27,7 +27,7 @@
             </header>
             <main id="main" itemscope itemtype="http://schema.org/Product">
                 <h1 tabindex="0" class="title">Product Info</h1>
-                <section class="product" aria-label="Product details" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <section class="product" aria-label="Product details">
                     <article class="product-image">
                         <img tabindex="0" src="css/img/female-shoes1.avif" alt="female running shoes" itemprop="image">
                         <!--Female shoes1 source: https://www.runnersworld.com/gear/a25578469/best-running-shoes-for-women/-->
@@ -35,7 +35,11 @@
                     <article class="product-text">
                         <span tabindex="0" class="product-category" itemprop="category">Women's Shoes</span>
                         <h2 tabindex="0" itemprop="name">Running shoes</h2>
-                        <span tabindex="0" class="product-price" itemprop="price">1999,- NOK</span>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="NOK">
+                            <h2 itemprop="price" content="2099" tabindex="0">1999,- NOK</h2>
+                            <link itemprop="availability" href="https://schema.org/InStock" /> <h2 tabindex="0">På Lager</h2>
+                        </div>
                         <p tabindex="0" itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
                         <article class="product-size-container">
                             <strong tabindex="0">Size: </strong>
@@ -63,6 +67,10 @@
                             <meta itemprop="priceCurrency" content="NOK">
                             <meta itemprop="price" content="1999">
                         </div>
+                    </div>
+                    <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="reviewCount" content="78">
+                        <meta itemprop="ratingValue" content="3.9">
                     </div>
                 </section>
             </main>

@@ -155,9 +155,17 @@
                     <section class="column">
                         <section class="card">
                             <h2>Forbedrende Tiltak</h2>
-                                <h3>FORSIDE</h3>
-                                    <img >
+                                <h3>Liste over tiltak gjort etter anbefalinger fra verktøyene</h3>
+                                    <img src="css/img/contrast-change.png" alt="fargeendringer i css">
+                                    <p>Forandring i bakgrunnsfarge gjorde jeg i css, slik at kontrasten mellom fargene på produktsiden og retur og leveransesiden gjør sidene mer leselig.</p>
+                                    <img src="css/img/delivery-change.png" alt="kodeendringer i html for retur og leveransesiden">
+                                    <p>Gjorde om h2 for overskriften av siden til en h1, da dette gir mer mening når det gjelder rekkefølge og hierarki.</p>
+                                    <img src="css/img/index-change.png" alt="kodeendringer i html for forsiden">
+                                    <p>Forbedret alt tekst for kampanjebildet på forsiden, slik at den ble mer beskrivende.</p>
                                     <p></p>
+                                    <p>Jeg har også kjørt koden gjennom html/css validator flere ganger for å sjekke om koden er satt opp riktig etter endringene som ble gjort, og fikk kun en del warnings, men ingen errorer.</p>
+                                    <img src="css/img/product-change-2.png" alt="kodeendringer i html for produktsiden">
+                                    <p>Jeg måtte ta vekk de fancy knappene for valg av størrelse, pga det lagde krøll med skjermlesere og tabbing. For tilgjengelighetens skyld så måtte de nedgraderes, og sjekkboksene er nå synlige. Valgene blir fortsatt markert med farge etter at de er blitt valgt, for å visualisere at man har gjort et valg.</p>
                         </section>
                     </section>
                 </article>
@@ -176,12 +184,29 @@
                                     <p>Denne gangen fikk jeg full pott for både SEO og UU, etter at jeg gjorde endringer som jeg fikk anbefalt. Denne scoren fikk jeg på alle tre sidene, og velger derfor å ikke inkludere skjermbilder av alle tre, da det praktisk talt blir duplikater av samme resultat uansett.</p>
                                     <p></p>
                                 <h3>WEBAIM</h3>
-                                    <img src="" alt="ny analyse av forsiden med webaim">
-                                    <img src="" alt="ny analyse av produktsiden med webaim">
-                                    <img src="" alt="ny analyse av retur og leveransesiden med webaim">
+                                    <img src="css/img/webaim-index-new.png" alt="ny analyse av forsiden med webaim">
+                                    <img src="css/img/webaim-products-new.png" alt="ny analyse av produktsiden med webaim">
+                                    <img src="css/img/webaim-delivery-new.png" alt="ny analyse av retur og leveransesiden med webaim">
                                     <p>Webaim har fortsatt en del av de alertene som den hadde før, men kontrast errorene er borte på alle sidene.</p>
                                     <br>
-                                    <p>NB! De sjekkboksene på alerts som ikke er huket av ble endret underveis, og skulle egentlig ikke vært med i skjermbildet.</p>
+                        </section>
+                    </section>
+                </article>
+                <article class="services">
+                    <section class="column">
+                        <section class="card">
+                            <h2>Google Rich Results Test</h2>
+                                <img src="css/img/rich-results.png" alt="google rich results test">
+                                <p>Google rich results testen viser at alt er i orden, men det er en del ting som er valgfrie som kan forbedres. Dette betyr likevel ikke at koden ikke er gyldig, men er heller en anbefaling for å gjøre innholdet mer synlig og trffbart.</p>
+                        </section>
+                    </section>
+                </article>
+                <article class="services">
+                    <section class="column">
+                        <section class="card">
+                            <h2>Refleksjonsbit</h2>
+                                <h3>Validatorer og Verktøy</h3>
+                                <p>I denne oppgaven ble det brukt en del validatorer, hvorav alle sjekker samme ting: seo og uu. Problemet her ligger i det at selv om man får full score og alt grønt på en validator, så betyr ikke nødvendigvis dette at resultatet vil være det samme på de andre validatorene. HTML markup validatoren sjekket oppbygging og logikk av html, og ga tilbakemeldinger og errorer som måtte rettes opp i, som skapte krøll for de andre validatorene når det gjaldt SEO og UU analysering. På Lighthouse for eksempel så fikk jeg full score for både desktop og mobil, men på webaim så hadde jeg fortsatt ting jeg kunne rette opp i som kom opp som gule alerts. Selv om alerts i seg selv ikke gjør siden ubrukelig, så er det igjen anbefalinger som kan gjøre siden bedre for for eksempel folks om brker skjermlesere og andre lignende verktøy. </p>
                         </section>
                     </section>
                 </article>
