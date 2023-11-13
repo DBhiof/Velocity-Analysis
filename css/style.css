@@ -175,7 +175,7 @@ header, main, footer{
   margin-top: 20px;
 }
 
-.product-size label{
+.product-size a{
   font-size: 1rem;
   background-color:rgb(22, 62, 118);
   width: 40px;
@@ -219,10 +219,6 @@ header, main, footer{
 .product-buttons .favorites-button{
   background-color:rgb(22, 62, 118);
   color: white;
-}
-
-.size-checkbox{
-  display: none;
 }
 
 .size-checkbox:checked + .size-label{
