@@ -4,112 +4,93 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Velocity - Your one-stop-shop for the best running shoes.">
+        <meta property="og:title" content="Delivery and return - customer service.">
+        <meta property="og:url" content="https://itstud.hiof.no/~dlinb/temp-velocity-analysis/Velocity-Analysis/products.html">
+        <meta property="og:description" content="We know delivery and return policies can be confusing. Here we have simplified it and made it easier for you to have a great experience, whether you're getting something delivered or returned!">
+        <meta property="og:image" content="http://127.0.0.1:5500/css/img/female-shoes1.avif">
         <link rel="stylesheet" href="css/style.css">
         <title>Delivery and Return</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav class="flex-section">
+            <header role="banner">
+                <a href="#main" class="button" aria-label="Skip to main content">Skip to main content</a>
+                <nav class="flex-section" role="navigation" aria-label="Main Navigation">
                     <a id="logo" href="index.html">VELOCITY</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery-return.html">Delivery and Return</a></li>
-                        <li><a href="analysis.html">Analyse</a></li>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="products.html">Products</a></li>
+                        <li role="listitem"><a href="delivery-return.html">Delivery and Return</a></li>
+                        <li role="listitem"><a href="analysis.html">Analyse</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
-              <section class="services">
-                  <h2 class="title">Delivery and Return</h2>
-                  <div class="column">
-                    <article class="card">
-                      <h3>Delivery</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
-                    </article>
-                  </div>
-              </section>
-              <section class="services">
-                <div class="column">
-                  <article class="card">
-                    <h3>Return</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
-                  </article>
-                </div>
-            </section>
+            <main id="main" role="main" aria-label="Main content">
+                <section class="services" role="region" aria-label="delivery information">
+                    <h1 class="title">Delivery and Return</h1>
+                    <div class="column">
+                        <article class="card">
+                            <h3>Delivery</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="services" role="region" aria-label="return information">
+                    <div class="column">
+                        <article class="card">
+                            <h3>Return</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
+                        </article>
+                    </div>
+                </section>
             </main>
-            <footer>
-              <article id="news-letter">
-                  <h2>Want to receive the latest news on the best shoes?</h2>
-                  <form class="form-group"
-                  id="newsletter-registration" 
-                  method="post" 
-                  action="#" 
-                  autocomplete="on">
-                      <span onclick="openClose('none')"></span>
-                      <h3>Sign up for our newsletter</h3>
-                      <label for="first-name">First name
-                          <input 
-                          type="text" 
-                          id="first-name" 
-                          name="name" 
-                          placeholder="Nora">
-                      </label>
-                      <label for="last-name">Last name
-                          <input 
-                          type="text" 
-                          id="last-name" 
-                          name="last-name" 
-                          placeholder="Nordmann">
-                      </label>
-                      <label for="email-registration">E-mail address</label>
-                      <input 
-                      type="email" 
-                      name="email-registration" 
-                      id="email-registration" 
-                      placeholder="nora@email.com">
-                      <label 
-                      class="newsletter-interest">What are you interested in?</label>
-                      <label 
-                      class="alternative-men">Running shoes for men.
-                          <input 
-                          type="radio" 
-                          value="Running shoes for men." 
-                          id="alternative-men" 
-                          name="newsletter-interest">
-                      </label> 
-                      <label 
-                      class="alternative-women">Running shoes for women.
-                          <input 
-                          type="radio" 
-                          value="Running shoes for women." 
-                          id="alternative-women" 
-                          name="newsletter-interest">
-                      </label>   
-                      <button class="button">Subscribe</button>
-                      <hr>                
-                  </form>
-              </article>
-          <section id="bottom">
-              <h2 class="title2">Services</h2>
-          </section>
-              <article>
-                  <h3>Products</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              </article>
-              <article>
-                  <h3>Delivery and Return</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              </article>
-              <article>
-                  <h3>Follow us</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              </article>
-              <article>
-                  <button class="button" onclick="window.location.href='delivery-return.html';">Back to the top</button>
-              </article>
-          </footer>
+            <footer role="contentinfo">
+                <article id="news-letter">
+                    <h2>Want to receive the latest news on the best shoes?</h2>
+                    <form class="form-group" id="newsletter-registration" method="post" action="#" autocomplete="on" role="form">
+                        <span onclick="openClose('none')" role="button" aria-label="Toggle newsletter form"></span>
+                        <h3>Sign up for our newsletter</h3>
+                        <label for="first-name">First name
+                            <input type="text" id="first-name" name="name" placeholder="Nora" aria-label="First name" required>
+                        </label>
+                        <label for="last-name">Last name
+                            <input type="text" id="last-name" name="last-name" placeholder="Nordmann" aria-label="Last name" required>
+                        </label>
+                        <label for="email-registration">E-mail address</label>
+                        <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com"
+                            aria-label="Email address" required>
+                        <label class="newsletter-interest">What are you interested in?</label>
+                        <label class="alternative-men">Running shoes for men.
+                            <input type="radio" value="Running shoes for men." id="alternative-men" name="newsletter-interest"
+                                aria-label="Running shoes for men">
+                        </label>
+                        <label class="alternative-women">Running shoes for women.
+                            <input type="radio" value="Running shoes for women." id="alternative-women" name="newsletter-interest"
+                                aria-label="Running shoes for women">
+                        </label>
+                        <button class="button" role="button" aria-label="Subscribe to newsletter">Subscribe</button>
+                        <hr>
+                    </form>
+                </article>
+                <section id="bottom">
+                    <h2 class="title2">Services</h2>
+                </section>
+                <article>
+                    <h3>Products</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Delivery and Return</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Follow us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <button class="button" onclick="window.location.href='index.html';" role="button" aria-label="Back to the top">Back to the top</button>
+                </article>
+            </footer>
       </div>
     </body>
 </html>

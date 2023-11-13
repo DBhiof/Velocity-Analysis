@@ -4,107 +4,99 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Velocity - Your one-stop-shop for the best running shoes.">
+        <meta property="og:title" content="Get your very own professional running shoes today!">
+        <meta property="og:url" content="https://itstud.hiof.no/~dlinb/temp-velocity-analysis/Velocity-Analysis/products.html">
+        <meta property="og:description" content="Check out these running shoes, perfect for running for hours on end without any pain or discomfort!">
+        <meta property="og:image" content="http://127.0.0.1:5500/css/img/female-shoes1.avif">
         <link rel="stylesheet" href="css/style.css">
         <title>Product Details Page</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav class="flex-section">
+            <header role="banner">
+                <a href="#main" class="button" aria-label="Skip to main content">Skip to main content</a>
+                <nav class="flex-section" role="navigation" aria-label="Main Navigation">
                     <a id="logo" href="index.html">VELOCITY</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery-return.html">Delivery and Return</a></li>
-                        <li><a href="analysis.html">Analyse</a></li>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="products.html">Products</a></li>
+                        <li role="listitem"><a href="delivery-return.html">Delivery and Return</a></li>
+                        <li role="listitem"><a href="analysis.html">Analyse</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main id="main" itemscope itemtype="http://schema.org/Product">
                 <h1 class="title">Product Info</h1>
-                <section class="product">
+                <section class="product" aria-label="Product details" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <article class="product-image">
-                        <img src="css/img/female-shoes1.avif" alt="female running shoes">
+                        <img src="css/img/female-shoes1.avif" alt="female running shoes" itemprop="image">
                         <!--Female shoes1 source: https://www.runnersworld.com/gear/a25578469/best-running-shoes-for-women/-->
                     </article>
                     <article class="product-text">
-                        <span class="product-categort">Women's Shoes</span>
-                        <h2>Running shoes</h2>
-                        <span class="product-price">1999,- NOK</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
+                        <span class="product-category" itemprop="category">Women's Shoes</span>
+                        <h2 itemprop="name">Running shoes</h2>
+                        <span class="product-price" itemprop="price">1999,- NOK</span>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue nisi. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.</p>
                         <article class="product-size-container">
                             <strong>Size: </strong>
                             <article class="product-size">
-                                <input type="checkbox" class="size-checkbox" id="size-40">
-                                <label for="size-40" class="size-label">40</label>
-                                <input type="checkbox" class="size-checkbox" id="size-38">
-                                <label for="size-38" class="size-label">38</label>
-                                <input type="checkbox" class="size-checkbox" id="size-36">
-                                <label for="size-36" class="size-label">36</label>
+                                <input type="checkbox" class="size-checkbox" aria-label="Size 40" itemprop="size">
+                                <label class="size-label">40</label>
+                                <input type="checkbox" class="size-checkbox" aria-label="Size 38" itemprop="size">
+                                <label class="size-label">38</label>
+                                <input type="checkbox" class="size-checkbox" aria-label="Size 36" itemprop="size">
+                                <label class="size-label">36</label>
                             </article>
                         </article>
                         <article class="product-buttons">
-                            <a href="#" class="cart-button">Add to cart</a>
-                            <a href="#" class="favorites-button">Favorites</a>
+                            <a href="#" class="cart-button" role="button" aria-label="Add to cart">Add to cart</a>
+                            <a href="#" class="favorites-button" role="button" aria-label="Add to favorites">Favorites</a>
                         </article>
                     </article>
                 </section>
+                <section>
+                    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+                        <meta itemprop="name" content="Running shoes">
+                        <meta itemprop="brand" content="Running shoes">
+                        <meta itemprop="image" content="css/img/female-shoes1.avif">
+                        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="NOK">
+                            <meta itemprop="price" content="1999">
+                        </div>
+                    </div>
+                </section>
             </main>
-            <footer>
+            <footer role="contentinfo">
                 <article id="news-letter">
                     <h2>Want to receive the latest news on the best shoes?</h2>
-                    <form class="form-group"
-                    id="newsletter-registration" 
-                    method="post" 
-                    action="#" 
-                    autocomplete="on">
-                        <span onclick="openClose('none')"></span>
+                    <form class="form-group" id="newsletter-registration" method="post" action="#" autocomplete="on" role="form">
+                        <span onclick="openClose('none')" role="button" aria-label="Toggle newsletter form"></span>
                         <h3>Sign up for our newsletter</h3>
                         <label for="first-name">First name
-                            <input 
-                            type="text" 
-                            id="first-name" 
-                            name="name" 
-                            placeholder="Nora">
+                            <input type="text" id="first-name" name="name" placeholder="Nora" aria-label="First name" required>
                         </label>
                         <label for="last-name">Last name
-                            <input 
-                            type="text" 
-                            id="last-name" 
-                            name="last-name" 
-                            placeholder="Nordmann">
+                            <input type="text" id="last-name" name="last-name" placeholder="Nordmann" aria-label="Last name" required>
                         </label>
                         <label for="email-registration">E-mail address</label>
-                        <input 
-                        type="email" 
-                        name="email-registration" 
-                        id="email-registration" 
-                        placeholder="nora@email.com">
-                        <label 
-                        class="newsletter-interest">What are you interested in?</label>
-                        <label 
-                        class="alternative-men">Running shoes for men.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for men." 
-                            id="alternative-men" 
-                            name="newsletter-interest">
-                        </label> 
-                        <label 
-                        class="alternative-women">Running shoes for women.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for women." 
-                            id="alternative-women" 
-                            name="newsletter-interest">
-                        </label>   
-                        <button class="button">Subscribe</button>
-                        <hr>                
+                        <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com"
+                            aria-label="Email address" required>
+                        <label class="newsletter-interest">What are you interested in?</label>
+                        <label class="alternative-men">Running shoes for men.
+                            <input type="radio" value="Running shoes for men." id="alternative-men" name="newsletter-interest"
+                                aria-label="Running shoes for men">
+                        </label>
+                        <label class="alternative-women">Running shoes for women.
+                            <input type="radio" value="Running shoes for women." id="alternative-women" name="newsletter-interest"
+                                aria-label="Running shoes for women">
+                        </label>
+                        <button class="button" role="button" aria-label="Subscribe to newsletter">Subscribe</button>
+                        <hr>
                     </form>
                 </article>
-            <section id="bottom">
-                <h2 class="title2">Services</h2>
-            </section>
+                <section id="bottom">
+                    <h2 class="title2">Services</h2>
+                </section>
                 <article>
                     <h3>Products</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -118,7 +110,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </article>
                 <article>
-                    <button class="button" onclick="window.location.href='index.html';">Back to the top</button>
+                    <button class="button" onclick="window.location.href='index.html';" role="button" aria-label="Back to the top">Back to the top</button>
                 </article>
             </footer>
         </div>

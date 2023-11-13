@@ -9,18 +9,19 @@
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav class="flex-section">
+            <header role="banner">
+                <a href="#main" class="button" aria-label="Skip to main content">Skip to main content</a>
+                <nav class="flex-section" role="navigation" aria-label="Main Navigation">
                     <a id="logo" href="index.html">VELOCITY</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery-return.html">Delivery and Return</a></li>
-                        <li><a href="analysis.html">Analyse</a></li>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="products.html">Products</a></li>
+                        <li role="listitem"><a href="delivery-return.html">Delivery and Return</a></li>
+                        <li role="listitem"><a href="analysis.html">Analyse</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main id="main">
                 <h1 class="title">ANALYSE AV NETTBUTIKKEN</h1>
                 <article class="services">
                     <section class="column">
@@ -190,64 +191,57 @@
                                     <p>Denne gangen fikk jeg full pott for både SEO og UU, etter at jeg gjorde endringer som jeg fikk anbefalt. Denne scoren fikk jeg på alle tre sidene, og velger derfor å ikke inkludere skjermbilder av alle tre, da det praktisk talt blir duplikater av samme resultat uansett.</p>
                                     <p></p>
                                 <h3>WEBAIM</h3>
+                                    <img src="css/img/webaim-index-new.png" alt="ny analyse av forsiden med webaim">
+                                    <img src="css/img/webaim-product-new.png" alt="ny analyse av produktsiden med webaim">
+                                    <img src="css/img/webaim-delivery-new.png" alt="ny analyse av retur og leveransesiden med webaim">
+                                    <p>Webaim har fortsatt en del av de alertene som den hadde før, men kontrast errorene er borte på alle sidene.</p>
+                                    <br>
+                                    <p>NB! De sjekkboksene på alerts som ikke er huket av ble endret underveis, og skulle egentlig ikke vært med i skjermbildet.</p>
+                        </section>
+                    </section>
+                </article>
+                <article class="services">
+                    <section class="column">
+                        <section class="card">
+                            <h2>Skjermleser og Navigasjon med Tastatur</h2>
+                                <p>En ting å ta i betraktning her er at jeg selv ikke bruker skjermleser, og er dermed ikke kjent med funksjonene av den til å begynne med. Det var ganske vansjelig for meg å navigere nettsiden nettopp fordi at dette er et verktøy jeg ikke har brukt for og heller aldri har brukt før. Mange av forbedringene og tiltakene som gjøres er ting man tenker seg kan være nyttig for for eksempel svaksynte, men i bunn og grunn så kan ikke jeg vite akkurat hva det er som funker best for dem, da jeg fant ut at dette er subjektivt blandt de svaksynte etter en samtale ned en som er svaksynt.</p>
+                                    <p></p>
+                                <p>Jeg prøvde meg på å bruke skjermleseren, og fant ingen feil eller steder hvor brukere av skjermlesere ikke kunne komme seg til. Noe som kanskje kunne vært bedre er beskrivelsen av bildene, da dette ikke kan sees men kun leses opp. Navigasjonsbiten øverst på siden kan også være litt irriterende å hele tiden måtte bla seg gjennom før man kommer til hovedinnholdet. Dette kommer til å fikses senere. En siste ting jeg kan se for meg kan skape problemer for en ny bruker som bruker skjermlesere kan være beskrivelsen av hvor enkelte linker tar deg, for eksempel bilder som funker som linker også videre. Her kan jeg legge til beskrivende labels eller alt tekster for å forteller brukeren hvor linken tar dem.</p>
                         </section>
                     </section>
                 </article>
             </main>
-            <footer>
+            <footer role="contentinfo">
                 <article id="news-letter">
                     <h2>Want to receive the latest news on the best shoes?</h2>
-                    <form class="form-group"
-                    id="newsletter-registration" 
-                    method="post" 
-                    action="#" 
-                    autocomplete="on">
-                        <span onclick="openClose('none')"></span> 
+                    <form class="form-group" id="newsletter-registration" method="post" action="#" autocomplete="on" role="form">
+                        <span onclick="openClose('none')" role="button" aria-label="Toggle newsletter form"></span>
                         <h3>Sign up for our newsletter</h3>
                         <label for="first-name">First name
-                            <input 
-                            type="text" 
-                            id="first-name" 
-                            name="name" 
-                            placeholder="Nora">
+                            <input type="text" id="first-name" name="name" placeholder="Nora" aria-label="First name" required>
                         </label>
                         <label for="last-name">Last name
-                            <input 
-                            type="text" 
-                            id="last-name" 
-                            name="last-name" 
-                            placeholder="Nordmann">
+                            <input type="text" id="last-name" name="last-name" placeholder="Nordmann" aria-label="Last name" required>
                         </label>
                         <label for="email-registration">E-mail address</label>
-                        <input 
-                        type="email" 
-                        name="email-registration" 
-                        id="email-registration" 
-                        placeholder="nora@email.com">
-                        <p class="newsletter-interest">What are you interested in?</p>
-                        <label 
-                        class="alternative-men">Running shoes for men.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for men." 
-                            id="alternative-men" 
-                            name="newsletter-interest">
-                        </label> 
-                        <label 
-                        class="alternative-women">Running shoes for women.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for women." 
-                            id="alternative-women" 
-                            name="newsletter-interest">
-                        </label>   
-                        <button class="button">Subscribe</button>
-                        <hr>                
+                        <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com"
+                            aria-label="Email address" required>
+                        <label class="newsletter-interest">What are you interested in?</label>
+                        <label class="alternative-men">Running shoes for men.
+                            <input type="radio" value="Running shoes for men." id="alternative-men" name="newsletter-interest"
+                                aria-label="Running shoes for men">
+                        </label>
+                        <label class="alternative-women">Running shoes for women.
+                            <input type="radio" value="Running shoes for women." id="alternative-women" name="newsletter-interest"
+                                aria-label="Running shoes for women">
+                        </label>
+                        <button class="button" role="button" aria-label="Subscribe to newsletter">Subscribe</button>
+                        <hr>
                     </form>
                 </article>
-            <section id="bottom">
-                <h2 class="title2">Services</h2>
-            </section>
+                <section id="bottom">
+                    <h2 class="title2">Services</h2>
+                </section>
                 <article>
                     <h3>Products</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -261,7 +255,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </article>
                 <article>
-                    <button class="button" onclick="window.location.href='analysis.html';">Back to the top</button>
+                    <button class="button" onclick="window.location.href='analysis.html';" role="button" aria-label="Back to the top">Back to the top</button>
                 </article>
             </footer>
         </div>

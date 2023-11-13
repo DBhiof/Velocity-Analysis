@@ -4,36 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Velocity - Your one-stop-shop for the best running shoes.">
+        <meta property="og:title" content="Velocity - Your one-stop-shop for the best running shoes.">
+        <meta property="og:url" content="https://itstud.hiof.no/~dlinb/temp-velocity-analysis/Velocity-Analysis/products.html">
+        <meta property="og:description" content="Velocity stands for quality and comfort. Our shoes are guaranteed to improve your running sessions.">
+        <meta property="og:image" content="http://127.0.0.1:5500/css/img/female-shoes1.avif">
         <link rel="stylesheet" href="css/style.css">
         <title>Velocity</title>
     </head>
     <body>
         <div id="grid-container">
-            <header>
-                <nav class="flex-section">
+            <header role="banner">
+                <a href="#main" class="button" aria-label="Skip to main content">Skip to main content</a>
+                <nav class="flex-section" role="navigation" aria-label="Main Navigation">
                     <a id="logo" href="index.html">VELOCITY</a>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery-return.html">Delivery and Return</a></li>
-                        <li><a href="analysis.html">Analyse</a></li>
+                    <ul role="list">
+                        <li role="listitem"><a href="index.html">Home</a></li>
+                        <li role="listitem"><a href="products.html">Products</a></li>
+                        <li role="listitem"><a href="delivery-return.html">Delivery and Return</a></li>
+                        <li role="listitem"><a href="analysis.html">Analyse</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
-                 <h1 class="title">VELOCITY</h1>
-                <section class="sale-cover">
-                    <a href="products.html"><img class="images" src="css/img/sale-cover.jpeg" alt="Sale cover image"></a>
+            <main id="main" role="main">
+                <h1 class="title">VELOCITY</h1>
+                <section class="sale-cover" role="region" aria-label="Sale section">
+                    <a href="products.html"><img class="images" src="css/img/sale-cover.jpeg" alt="Picture of campaign for shoes on sale on the website"></a>
                     <!--sale cover image source: https://www.runnersworld.com/gear/g43941809/running-shoe-memorial-day-sale/-->
                     <h2 class="title2"> SALE </h2>
                 </section>
-                <section class="flex-section">
-                    <img class="images" src="css/img/male-runner.jpg" alt="male runner">
+                <section class="flex-section" role="region" aria-label="Images of male and female runners">
+                    <img class="images" src="css/img/male-runner.jpg" alt="male runner" role="img" aria-label="Male runner">
                     <!--Male runner source: https://www.istockphoto.com/photo/dynamic-running-uphill-on-trail-male-athlete-runner-side-view-gm862317986-142907437-->
-                    <img class="images" src="css/img/female-runner.jpg" alt="female runner">
+                    <img class="images" src="css/img/female-runner.jpg" alt="female runner" role="img" aria-label="Female runner">
                     <!--Female runner source: https://www.123rf.com/photo_20617366_running-sport-fitness-woman-closeup-of-female-legs-and-shoes-in-action-girl-athlete-fitness-runner.html-->
                 </section>
-                <section class="flex-section">
+                <section class="flex-section" role="region" aria-label="Bestsellers for men">
                     <h2>Bestsellers - Men</h2>
                     <a href="products.html"><img class="images" src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
                     <!--Male shoes1 source: https://www.runnersworld.com/gear/a26028922/running-shoes-for-men/-->
@@ -42,7 +47,7 @@
                     <a href="products.html"><img class="images" src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
                     <!--Male shoes1 source: https://www.runnersworld.com/gear/a26028922/running-shoes-for-men/-->
                 </section>
-                <section class="flex-section">
+                <section class="flex-section" role="region" aria-label="Bestsellers for women">
                     <h2>Bestsellers - Women</h2>
                     <a href="products.html"><img class="images" src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
                     <!--Female shoes1 source: https://www.runnersworld.com/gear/a25578469/best-running-shoes-for-women/-->
@@ -52,61 +57,37 @@
                     <!--Female shoes1 source: https://www.runnersworld.com/gear/a25578469/best-running-shoes-for-women/-->
                 </section>
             </main>
-            <footer>
+            <footer role="contentinfo">
                 <article id="news-letter">
                     <h2>Want to receive the latest news on the best shoes?</h2>
-                    <form class="form-group"
-                    id="newsletter-registration" 
-                    method="post" 
-                    action="#" 
-                    autocomplete="on">
-                        <span onclick="openClose('none')"></span>
+                    <form class="form-group" id="newsletter-registration" method="post" action="#" autocomplete="on" role="form">
+                        <span onclick="openClose('none')" role="button" aria-label="Toggle newsletter form"></span>
                         <h3>Sign up for our newsletter</h3>
                         <label for="first-name">First name
-                            <input 
-                            type="text" 
-                            id="first-name" 
-                            name="name" 
-                            placeholder="Nora">
+                            <input type="text" id="first-name" name="name" placeholder="Nora" aria-label="First name" required>
                         </label>
                         <label for="last-name">Last name
-                            <input 
-                            type="text" 
-                            id="last-name" 
-                            name="last-name" 
-                            placeholder="Nordmann">
+                            <input type="text" id="last-name" name="last-name" placeholder="Nordmann" aria-label="Last name" required>
                         </label>
                         <label for="email-registration">E-mail address</label>
-                        <input 
-                        type="email" 
-                        name="email-registration" 
-                        id="email-registration" 
-                        placeholder="nora@email.com">
-                        <label 
-                        class="newsletter-interest">What are you interested in?</label>
-                        <label 
-                        class="alternative-men">Running shoes for men.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for men." 
-                            id="alternative-men" 
-                            name="newsletter-interest">
-                        </label> 
-                        <label 
-                        class="alternative-women">Running shoes for women.
-                            <input 
-                            type="radio" 
-                            value="Running shoes for women." 
-                            id="alternative-women" 
-                            name="newsletter-interest">
-                        </label>   
-                        <button class="button">Subscribe</button>
-                        <hr>                
+                        <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com"
+                            aria-label="Email address" required>
+                        <label class="newsletter-interest">What are you interested in?</label>
+                        <label class="alternative-men">Running shoes for men.
+                            <input type="radio" value="Running shoes for men." id="alternative-men" name="newsletter-interest"
+                                aria-label="Running shoes for men">
+                        </label>
+                        <label class="alternative-women">Running shoes for women.
+                            <input type="radio" value="Running shoes for women." id="alternative-women" name="newsletter-interest"
+                                aria-label="Running shoes for women">
+                        </label>
+                        <button class="button" role="button" aria-label="Subscribe to newsletter">Subscribe</button>
+                        <hr>
                     </form>
                 </article>
-            <section id="bottom">
-                <h2 class="title2">Services</h2>
-            </section>
+                <section id="bottom">
+                    <h2 class="title2">Services</h2>
+                </section>
                 <article>
                     <h3>Products</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -120,7 +101,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </article>
                 <article>
-                    <button class="button" onclick="window.location.href='index.html';">Back to the top</button>
+                    <button class="button" onclick="window.location.href='index.html';" role="button" aria-label="Back to the top">Back to the top</button>
                 </article>
             </footer>
         </div>
